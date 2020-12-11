@@ -2,7 +2,7 @@ import cv2
 import imutils 
 
 
-#cam = cv2.VideoCapture('subway.mp4') 
+cam = cv2.VideoCapture('subway.mp4') # вместо subway.mp4 название файлика kattyg 
 
 # Initializing the HOG person 
 hog = cv2.HOGDescriptor() 
@@ -24,10 +24,10 @@ def is_intersected(sq1, sq2):
         return True
 
 while True:
-    #success, image = cam.read()
+    success, image = cam.read()
 
     # Reading the Image 
-    image = cv2.imread('kek.jpg') 
+    #image = cv2.imread('kek.jpg') 
     
     #gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
